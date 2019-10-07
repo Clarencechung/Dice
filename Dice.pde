@@ -12,18 +12,25 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
+	int myX, myY, mySize; 
 	
 	Die(int x, int y) //constructor
 	{
-		//variable initializations here
+		myX = x;
+		myY = y;
+		mySize = 50;
 	}
 	void roll()
 	{
-		//your code here
+		(int)(Math.random()*6 + 1);
+	    fill(0);
+	    textSize(24);
+	    text(num,145,160);
+	    if (num == 1)
+	    ellipse(myX,myY, 10,10);
 	}
 	void show()
 	{
-		//your code here
+		rect(myX,myY,)
 	}
 }
